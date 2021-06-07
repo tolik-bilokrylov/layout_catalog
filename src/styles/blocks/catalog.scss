@@ -18,10 +18,15 @@
   }
 
   &__imac {
-    display: block;
-    width: 160px;
-    height: 134px;
-    margin: 15px auto 45px;
+    height: 149px;
+    width: 168px;
+    padding-top: 15px;
+    margin-bottom: 45px;
+    transition: transform 0.4s;
+    &:hover {
+      border: 3px solid #f3f3f3;
+      transform: scale(120%);
+    }
   }
 
   &__text {
@@ -71,8 +76,12 @@
   }
 
   &__link:hover {
-    background: $main-color;
-    color: $castom-color;
     border: 1px solid $castom-color;
+    transition: color 0.4s, background-color 0.4s;
+
+    &:hover {
+      color: $castom-color;
+      background-color: $main-color;
+    }
   }
 }
