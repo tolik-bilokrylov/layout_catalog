@@ -23,7 +23,11 @@
   }
 
   &__link:hover {
-    color: $castom-color;
+    transition: color 0.4s;
+
+    &:hover {
+      color: $castom-color;
+    }
   }
 
   &__link.is-active {
