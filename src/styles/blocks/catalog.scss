@@ -1,9 +1,10 @@
 @import "./utils/variebles.scss";
 
 .box {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 
   &__card {
     width: 200px;
